@@ -1,0 +1,5 @@
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\Data Access Layer\bin\Debug\Data Access Layer.dll
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\Data Access Layer\bin\Debug\Data Access Layer.pdb
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\Data Access Layer\obj\Debug\Data Access Layer.csprojResolveAssemblyReference.cache
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\Data Access Layer\obj\Debug\Data Access Layer.dll
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\Data Access Layer\obj\Debug\Data Access Layer.pdb

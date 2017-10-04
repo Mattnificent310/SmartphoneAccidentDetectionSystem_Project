@@ -1,0 +1,5 @@
+c:\users\mc\documents\visual studio 2015\Projects\SPADSBO\SPADSBO\obj\Debug\SPADSBO.csprojResolveAssemblyReference.cache
+C:\Users\MC\Documents\Visual Studio 2015\Projects\SPADSBO\SPADSBO\bin\Debug\SPADSBO.dll
+C:\Users\MC\Documents\Visual Studio 2015\Projects\SPADSBO\SPADSBO\bin\Debug\SPADSBO.pdb
+C:\Users\MC\Documents\Visual Studio 2015\Projects\SPADSBO\SPADSBO\obj\Debug\SPADSBO.dll
+C:\Users\MC\Documents\Visual Studio 2015\Projects\SPADSBO\SPADSBO\obj\Debug\SPADSBO.pdb
