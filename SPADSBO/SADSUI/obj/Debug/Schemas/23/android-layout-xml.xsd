@@ -5,7 +5,7 @@
   <xs:import schemaLocation="schemas.android.com.tools.xsd" namespace="http://schemas.android.com/tools" />
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>2017/10/01 12:03:36</xs:documentation>
+    <xs:documentation>2017/10/12 10:23:01</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -114,6 +114,7 @@
       <xs:element ref="android.support.v7.widget.Toolbar" />
       <xs:element ref="android.support.v7.view.menu.ExpandedMenuView" />
       <xs:element ref="android.support.v7.view.menu.ListMenuItemView" />
+      <xs:element ref="com.xamarin.forms.platform.android.FormsViewGroup" />
       <xs:element ref="SADSUI.SlidingTabStrip" />
       <xs:element ref="SADSUI.SlidingTabScrollView" />
     </xs:choice>
@@ -1797,6 +1798,16 @@
   <xs:complexType name="android.support.v7.view.menu.ListMenuItemView">
     <xs:complexContent mixed="false">
       <xs:extension base="LinearLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="com.xamarin.forms.platform.android.FormsViewGroup" type="com.xamarin.forms.platform.android.FormsViewGroup">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Xamarin.Forms.Platform.Android.FormsViewGroup</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.xamarin.forms.platform.android.FormsViewGroup">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="SADSUI.SlidingTabStrip" type="SADSUI.SlidingTabStrip">

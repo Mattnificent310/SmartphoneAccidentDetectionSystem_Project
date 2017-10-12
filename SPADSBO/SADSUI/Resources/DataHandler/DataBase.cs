@@ -39,6 +39,23 @@ namespace SADSUI.Resources.DataHelper
             }
         }
 
+        public bool createDataBaseUsers()
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Users.db")))
+                {
+                    connection.CreateTable<Users>();
+                    return true;
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLiteEx", ex.Message);
+                return false;
+            }
+        }
+
         public bool InsertKey(Keys keys)
         {
             try
@@ -56,6 +73,23 @@ namespace SADSUI.Resources.DataHelper
             }
         }
 
+        public bool InsertUser(Users users)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Users.db")))
+                {
+                    connection.Insert(users);
+                    return true;
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLiteEx", ex.Message);
+                return false;
+            }
+        }
+
         public bool UpdateKey(Keys keys)
         {
             try
@@ -63,6 +97,23 @@ namespace SADSUI.Resources.DataHelper
                 using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "KeysDatabase.db")))
                 {
                     connection.Query<Keys>("UPDATE Keys set KeysValue=? WHERE ID=?",keys.KeyValue,keys.ID);
+                    return true;
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLiteEx", ex.Message);
+                return false;
+            }
+        }
+
+        public bool UpdateUsers(Users users)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Users.db")))
+                {
+                    connection.Query<Keys>("UPDATE Users set Name=? WHERE ID=?", users.Name, users.ID);
                     return true;
                 }
             }

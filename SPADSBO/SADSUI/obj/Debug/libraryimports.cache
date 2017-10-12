@@ -7,5 +7,6 @@
   <NativeLibraries />
   <Jars>
     <Jar>obj\Debug\__library_projects__\EasySplashScreen\library_project_imports\bin\classes.jar</Jar>
+    <Jar>obj\Debug\__library_projects__\FormsViewGroup\library_project_imports\formsviewgroup.jar</Jar>
   </Jars>
 </Paths>

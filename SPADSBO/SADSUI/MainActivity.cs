@@ -29,7 +29,12 @@ namespace SADSUI
 
             //Create Database
             db = new DataBase();
-            db.createDataBase();
+            // db.createDataBase();
+            //db.createDataBaseUsers();
+
+            
+            //db.InsertUser("123ABC", "Louis", "Smith", "0730445712", "Nissan Skyline", "FG23TIGP");
+
 
             LoadData();
 

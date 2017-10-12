@@ -8,6 +8,7 @@
   <application android:label="SADSUI" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <activity android:label="AboutUs" android:name="md503b4ae7ed143ee5e639f396dc3f1ce25.AboutUs" />
     <activity android:label="Drive" android:name="md503b4ae7ed143ee5e639f396dc3f1ce25.Drive" />
+    <activity android:label="DriverHistory" android:name="md503b4ae7ed143ee5e639f396dc3f1ce25.DriverHistory" />
     <activity android:label="EmergencyInfo" android:name="md503b4ae7ed143ee5e639f396dc3f1ce25.EmergencyInfo" />
     <activity android:label="Home" android:name="md503b4ae7ed143ee5e639f396dc3f1ce25.Home" />
     <activity android:label="SADSUI" android:name="md503b4ae7ed143ee5e639f396dc3f1ce25.MainActivity" />

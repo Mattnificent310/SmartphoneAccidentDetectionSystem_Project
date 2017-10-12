@@ -5,14 +5,22 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:weightSum="100"
-    android:background="@drawable/report">
+    android:background="@android:color/background_dark">
+    <ImageView
+        android:src="@drawable/report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView1"
+        android:background="@android:color/holo_orange_dark" />
     <TextView
-        android:id="@+id/item_subtitle"
-        android:layout_width="wrap_content"
+        android:text="Report"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="" />
+        android:gravity="center"
+        android:id="@+id/textView2"
+        android:background="@android:color/holo_orange_dark" />
     <TextView
         android:id="@+id/item_title"
         android:layout_width="wrap_content"
@@ -30,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:spinnerMode="dialog"
-        android:textAlignment="center"
+        android:gravity="center"
         android:layout_weight="10"
         android:id="@+id/spinnerType" />
     <TextView
@@ -46,7 +54,7 @@
         android:spinnerMode="dialog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
+        android:gravity="center"
         android:layout_weight="10"
         android:id="@+id/spinnerServerity" />
     <TextView
@@ -61,7 +69,7 @@
     <Spinner
         android:layout_width="match_parent"
         android:layout_weight="10"
-        android:textAlignment="center"
+        android:gravity="center"
         android:spinnerMode="dialog"
         android:layout_height="wrap_content"
         android:id="@+id/spinnerCarsInvolved" />
@@ -79,14 +87,9 @@
         android:text="Location (when available)"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_width="match_parent"
+        android:gravity="center"
         android:layout_height="wrap_content"
         android:id="@+id/location_text" />
-    <TextView
-        android:text="Address (when available)"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/address_text" />
     <Button
         android:text="Send Report"
         android:layout_width="match_parent"

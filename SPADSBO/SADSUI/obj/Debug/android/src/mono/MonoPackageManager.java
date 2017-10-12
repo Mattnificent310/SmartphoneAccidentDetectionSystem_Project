@@ -100,10 +100,14 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "SADSUI.dll" comes first in this list. */
 		"SADSUI.dll",
 		"EasySplashScreen.dll",
+		"FormsViewGroup.dll",
 		"SQLite-net.dll",
 		"SQLitePCL.raw.dll",
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Android.Support.v7.AppCompat.dll",
+		"Xamarin.Forms.Core.dll",
+		"Xamarin.Forms.Platform.Android.dll",
+		"Xamarin.Forms.Xaml.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

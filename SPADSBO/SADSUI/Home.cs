@@ -13,6 +13,8 @@ using Android.Support.V4.View;
 using Android.Support.V4.App;
 using Android.Webkit;
 using Android.Locations;
+using Android.Views.Animations;
+
 
 namespace SADSUI
 {
@@ -22,10 +24,7 @@ namespace SADSUI
         private ViewPager mViewPager;
         private SlidingTabScrollView mScrollView;
         static readonly string TAG = "X:" + typeof(Home).Name;
-       
-
-        string _locationProvider;
-        TextView _locationText;
+        
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -80,8 +79,11 @@ namespace SADSUI
             public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
             {
                 var view = inflater.Inflate(Resource.Layout.Fragment_Drive, container, false);
-                
-               
+
+                var rotateAboutCenterButton = view.FindViewById<ImageButton>(Resource.Id.btnDrive);
+                var rotateAboutCenterAnimation = AnimationUtils.LoadAnimation(this.Context, Resource.Animation.rotate_center);
+                rotateAboutCenterButton.Click += (sender, args) => rotateAboutCenterButton.StartAnimation(rotateAboutCenterAnimation);
+
                 return view;
             }
 
@@ -94,12 +96,21 @@ namespace SADSUI
         public class Fragment2 : Android.Support.V4.App.Fragment
         {
             private Button btnEditProfile;
+            private Button btnHistory;
             public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
             {
                 var view = inflater.Inflate(Resource.Layout.Fragment_PersonalProfile, container, false);
                 btnEditProfile = view.FindViewById<Button>(Resource.Id.btnEditProfile);
                 btnEditProfile.Click += BtnOption_Click;
+                btnHistory = view.FindViewById<Button>(Resource.Id.btnProfileHistory);
+                btnHistory.Click += BtnHistory_Click;
                 return view;
+            }
+
+            private void BtnHistory_Click(object sender, EventArgs e)
+            {
+                var activity2 = new Intent(this.Context, typeof(DriverHistory));
+                StartActivity(activity2);
             }
 
             private void BtnOption_Click(object sender, EventArgs e)
@@ -114,22 +125,26 @@ namespace SADSUI
             }
         }
 
-        public class Fragment3 : Android.Support.V4.App.Fragment
+        public class Fragment3 : Android.Support.V4.App.Fragment, ILocationListener
         {
-            TextView _addressText;
             Location _currentLocation;
             LocationManager _locationManager;
-            string _locationProvider;
-            TextView _locationText;
-            View view;
+            String _locationProvider;
+            private TextView address;
+            private TextView txtLocation;
+            private string latitud;
+            private string longitud;
+          public string AddressReport;
 
 
             public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
             {
-                view = inflater.Inflate(Resource.Layout.Fragment_Report, container, false);
+               View view = inflater.Inflate(Resource.Layout.Fragment_Report, container, false);
 
-                _addressText = view.FindViewById<TextView>(Resource.Id.address_text);
-                _locationText = view.FindViewById<TextView>(Resource.Id.location_text);
+               
+                txtLocation = view.FindViewById<TextView>(Resource.Id.location_text);
+
+                InitializeLocationManager();
 
                 var btnGetLocation = view.FindViewById<Button>(Resource.Id.get_address_button);
                 btnGetLocation.Click += GetLocation_OnClick;
@@ -152,15 +167,105 @@ namespace SADSUI
                 return view;
             }
 
-            private void SendEmail_OnClick(object sender, EventArgs e)
+            private async System.Threading.Tasks.Task ReverseGeocodeCurrentLocationAsync()
             {
                 
             }
 
+            private void InitializeLocationManager()
+            {
+                _locationManager = (LocationManager)Activity.GetSystemService(Context.LocationService);
+                Criteria criteriaForLocationService = new Criteria
+                {
+                    Accuracy = Accuracy.Fine
+                };
+                IList<string> acceptableLocationProviders = _locationManager.GetProviders(criteriaForLocationService, true);
+                if (acceptableLocationProviders.Any())
+                {
+                    _locationProvider = acceptableLocationProviders.First();
+                }
+                else
+                {
+                    _locationProvider = String.Empty;
+                }
+            }
+
+            public void OnLocationChanged(Location location)
+            {
+                _currentLocation = location;
+                if (_currentLocation == null)
+                {
+                    Toast.MakeText(Activity.ApplicationContext, "No se pudo obtener la localizacion", ToastLength.Long).Show();
+                }
+                else
+                {
+
+                    latitud = _currentLocation.Latitude.ToString();
+                    longitud = _currentLocation.Longitude.ToString();
+                    Geocoder geocoder = new Geocoder(this.Context);
+                    IList<Address> addressList =
+                         geocoder.GetFromLocation(_currentLocation.Latitude, _currentLocation.Longitude, 10);
+
+                    Address address = addressList.FirstOrDefault();
+                    AddressReport = address.GetAddressLine(0);
+                    txtLocation.Text = AddressReport;
+                   // txtLocation.Text = "Location : " + latitud + ", " + longitud;
+                }
+            }
+
+            public void OnProviderDisabled(string provider)
+            {
+                throw new NotImplementedException();
+            }
+
+            public void OnProviderEnabled(string provider)
+            {
+                throw new NotImplementedException();
+            }
+
+            public void OnStatusChanged(string provider, Availability status, Bundle extras)
+            {
+                
+            }
+
+            public override void OnResume()
+            {
+                base.OnResume();
+                _locationManager.RequestLocationUpdates(_locationProvider, 0, 0, this);
+            }
+
+            public override void OnPause()
+            {
+                base.OnPause();
+                _locationManager.RemoveUpdates(this);
+            }
+
+            private void SendEmail_OnClick(object sender, EventArgs e)
+            {
+                var btnSendReport = View.FindViewById<Button>(Resource.Id.btnSendReport);
+                btnSendReport.Click += SendReport_Click;
+                
+            }
+
+            private void SendReport_Click(object sender, EventArgs e)
+            {
+                var emailIntent = new Intent(Android.Content.Intent.ActionSend);
+                emailIntent.PutExtra(Android.Content.Intent.ExtraEmail, new[] { "Reports.sads@gmail.com" });
+
+                var spinReportType = View.FindViewById<Spinner>(Resource.Id.spinnerType);
+                var spinServerity = View.FindViewById<Spinner>(Resource.Id.spinnerServerity);
+                var spinV = View.FindViewById<Spinner>(Resource.Id.spinnerCarsInvolved);
+
+                emailIntent.PutExtra(Android.Content.Intent.ExtraSubject, "By-Stander Report");
+                emailIntent.SetType("text/plain");
+                emailIntent.PutExtra(Android.Content.Intent.ExtraText, "Accident Reported by Jean-Louis Els \n" + "Report Type : " + spinReportType.SelectedItem + "\n Serverity Level : " + spinServerity.SelectedItem + "\n Number of vehicles involved : " + spinV.SelectedItem + "\n Location : " + AddressReport);
+                StartActivity(emailIntent);
+            }
+
             private void GetLocation_OnClick(object sender, EventArgs e)
             {
-                var btnSend = view.FindViewById<Button>(Resource.Id.btnSendReport);
-                btnSend.Enabled = true;
+                var btnReport = View.FindViewById<Button>(Resource.Id.btnSendReport);
+                btnReport.Enabled = true;
             }
 
             private void spinner_Itemselected(object sender, AdapterView.ItemSelectedEventArgs e)
