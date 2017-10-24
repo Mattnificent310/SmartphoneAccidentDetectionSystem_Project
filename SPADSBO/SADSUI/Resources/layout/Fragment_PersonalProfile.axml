@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:background="@android:color/background_dark">
+    android:background="#323335">
     <ImageView
         android:src="@drawable/user"
         android:layout_width="match_parent"

@@ -15,12 +15,19 @@
         p1:layout_weight="30"
         p1:id="@+id/imageView1" />
     <TextView
-        p1:text="Please enter your unique key"
+        p1:text="Please enter your OTP"
         p1:gravity="center"
         p1:textAppearance="?android:attr/textAppearanceMedium"
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
         p1:id="@+id/textView1" />
+    <TextView
+        p1:text="_______________________________________________________"
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:gravity="center"
+        p1:id="@+id/textView2" />
     <EditText
         p1:inputType="textPassword"
         p1:layout_marginLeft="20dp"
@@ -28,6 +35,13 @@
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
         p1:id="@+id/txtUniqueKey" />
+    <TextView
+        p1:text="_______________________________________________________"
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:gravity="center"
+        p1:id="@+id/textView3" />
     <Button
         p1:text="Validate Unique Key"
         p1:layout_width="match_parent"

@@ -4,15 +4,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:weightSum="100"
-    android:background="@android:color/background_dark">
+    android:weightSum="100">
     <ImageView
         android:src="@drawable/call"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/imageView1"
         android:background="@android:color/holo_orange_dark" />
-  <TextView
+    <TextView
         android:text="Emergency"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
@@ -26,5 +25,6 @@
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/EmergencyListView" />
+        android:id="@+id/EmergencyListView"
+        android:background="#323335" />
 </LinearLayout>

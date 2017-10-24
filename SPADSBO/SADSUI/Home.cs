@@ -56,9 +56,9 @@ namespace SADSUI
             {
                 mFragmentHolder = new List<Android.Support.V4.App.Fragment>();
                 mFragmentHolder.Add(new Fragment1());
-                mFragmentHolder.Add(new Fragment2());
                 mFragmentHolder.Add(new Fragment3());
                 mFragmentHolder.Add(new Fragment4());
+                mFragmentHolder.Add(new Fragment2());
                 mFragmentHolder.Add(new Fragment5());
             }
 
@@ -97,6 +97,7 @@ namespace SADSUI
         {
             private Button btnEditProfile;
             private Button btnHistory;
+
             public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
             {
                 var view = inflater.Inflate(Resource.Layout.Fragment_PersonalProfile, container, false);
@@ -282,11 +283,12 @@ namespace SADSUI
 
         public class Fragment4 : Android.Support.V4.App.Fragment
         {
-            private List<string> mItems;
-            private ListView listview;
+            protected List<string> mItems;
+            protected ListView listview;
 
             public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
             {
+
                 var view = inflater.Inflate(Resource.Layout.Fragment_EmergencyInfo, container, false);
                 listview = view.FindViewById<ListView>(Resource.Id.EmergencyListView);
 
@@ -302,6 +304,11 @@ namespace SADSUI
                 ArrayAdapter<string> adapter = new ArrayAdapter<string>(this.Context, Android.Resource.Layout.SimpleListItem1, mItems);
 
                 listview.Adapter = adapter;
+                listview.ItemClick += (s, e) => 
+                {
+                    Toast.MakeText(this.Context,"Calling", ToastLength.Short).Show();
+                };
+
                 return view;
             }
 
@@ -342,6 +349,10 @@ namespace SADSUI
             }
         }
 
+        public class MyEventArgs : EventArgs
+        {
+            public int Id { get; set; }
+        }
 
 
 
