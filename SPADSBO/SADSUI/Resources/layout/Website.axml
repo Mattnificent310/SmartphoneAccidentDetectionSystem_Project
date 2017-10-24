@@ -21,40 +21,40 @@
         android:id="@+id/textView3"
         android:background="@android:color/holo_orange_dark" />
     <TextView
-        android:text="Jean-Louis"
+        android:text="Name"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1" />
+        android:id="@+id/txtUserNameEdit" />
     <TextView
-        android:text="Els"
+        android:text="Surname"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_height="wrap_content"
-        android:id="@+id/textView2" />
+        android:id="@+id/txtUserSurnameEdit" />
     <EditText
         android:inputType="textPersonName"
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_height="wrap_content"
-        android:text="0716061609"
-        android:id="@+id/editText2" />
+        android:text="ContactNo"
+        android:id="@+id/txtUserContactEdit" />
     <EditText
         android:inputType="textPersonName"
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_height="wrap_content"
-        android:text="Ford Ranger"
-        android:id="@+id/editText2" />
+        android:text="Model"
+        android:id="@+id/txtUserModelEdit" />
     <EditText
         android:inputType="textPersonName"
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_height="wrap_content"
-        android:text="GT13DGP"
-        android:id="@+id/editText2" />
+        android:text="RegNo"
+        android:id="@+id/txtUserRegNumber" />
     <Button
         android:text="Save"
         android:layout_width="match_parent"
@@ -67,4 +67,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnCancel"
         android:background="@drawable/buttonsignupstyle" />
+    <TextView
+        android:text="Server status : "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDBCon" />
 </LinearLayout>

@@ -10,7 +10,6 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using SADSUI.Resources.Modell;
-using SADSUI.Resources.DataHelper;
 using SADSUI.Resources;
 using Android.Webkit;
 using Android.Support.V4.App;
@@ -22,7 +21,7 @@ namespace SADSUI
     {
         ListView lstData;
         List<Keys> lstSource = new List<Keys>();
-        DataBase db;
+        
 
         protected override void OnCreate(Bundle savedInstanceState)
         {

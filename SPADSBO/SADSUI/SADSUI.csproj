@@ -101,7 +101,6 @@
     <Compile Include="ListViewAdapter.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="ReportAccident.cs" />
-    <Compile Include="Resources\DataHandler\DataBase.cs" />
     <Compile Include="Resources\DataHandler\DataHandler_MySQL.cs" />
     <Compile Include="Resources\Modell\Keys.cs" />
     <Compile Include="Resources\Modell\Users.cs" />

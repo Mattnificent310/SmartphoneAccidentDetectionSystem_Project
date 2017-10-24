@@ -12,13 +12,26 @@ using Android.Widget;
 
 namespace SADSUI.Resources.Modell
 {
+
    public class Users
     {
-        public string ID { get; set; }
+        public int ID { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string ContactNo { get; set; }
         public string VModel { get; set; }
         public string RegNo { get; set; }
+        public string Key { get; set; }
+
+        public Users(int id, string name, string surname, string contactNo, string vModel, string regNo,string key)
+        {
+            this.ID = id;
+            this.Name = name;
+            this.Surname = surname;
+            this.ContactNo = contactNo;
+            this.VModel = vModel;
+            this.RegNo = regNo;
+            this.Key = key;
+        }
     }
 }

@@ -19,7 +19,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:label="Website" android:name="md503b4ae7ed143ee5e639f396dc3f1ce25.Website" />
+    <activity android:label="Profile" android:name="md503b4ae7ed143ee5e639f396dc3f1ce25.Website" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="SADSUI.SADSUI.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">

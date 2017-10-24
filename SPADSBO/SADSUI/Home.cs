@@ -14,7 +14,8 @@ using Android.Support.V4.App;
 using Android.Webkit;
 using Android.Locations;
 using Android.Views.Animations;
-
+using SADSUI.Resources.DataHandler;
+using SADSUI.Resources.Modell;
 
 namespace SADSUI
 {
@@ -97,10 +98,35 @@ namespace SADSUI
         {
             private Button btnEditProfile;
             private Button btnHistory;
+            TextView txtUserName;
+            TextView txtUserSurname;
+            TextView txtUserContact;
+            TextView txtUserModel;
+            TextView txtUserReg;
+
+            List<Users> lstUser;
+            DataHandler_MySQL dh;
 
             public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
             {
                 var view = inflater.Inflate(Resource.Layout.Fragment_PersonalProfile, container, false);
+                dh = new DataHandler_MySQL();
+                lstUser = dh.getUsers();
+
+                txtUserName = view.FindViewById<TextView>(Resource.Id.txtPName);
+                txtUserSurname = view.FindViewById<TextView>(Resource.Id.txtPSurname);
+                txtUserContact = view.FindViewById<TextView>(Resource.Id.txtPContact);
+                txtUserModel = view.FindViewById<TextView>(Resource.Id.txtPModel);
+                txtUserReg = view.FindViewById<TextView>(Resource.Id.txtPReg);
+
+                //Set Data using index[0]
+                
+                txtUserName.Text = lstUser[0].Name;
+                txtUserSurname.Text = lstUser[0].Surname;
+                txtUserContact.Text = "Contact No: "+lstUser[0].ContactNo;
+                txtUserModel.Text = "Vehicle Model: " + lstUser[0].VModel;
+                txtUserReg.Text = "Registration Number : " + lstUser[0].RegNo;
+
                 btnEditProfile = view.FindViewById<Button>(Resource.Id.btnEditProfile);
                 btnEditProfile.Click += BtnOption_Click;
                 btnHistory = view.FindViewById<Button>(Resource.Id.btnProfileHistory);
