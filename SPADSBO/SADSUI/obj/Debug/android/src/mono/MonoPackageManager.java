@@ -102,6 +102,8 @@ class MonoPackageManager_Resources {
 		"EasySplashScreen.dll",
 		"FormsViewGroup.dll",
 		"MySql.Data.CF.dll",
+		"Plugin.Connectivity.Abstractions.dll",
+		"Plugin.Connectivity.dll",
 		"SQLite-net.dll",
 		"SQLitePCL.raw.dll",
 		"Xamarin.Android.Support.v4.dll",

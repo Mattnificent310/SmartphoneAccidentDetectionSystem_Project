@@ -111,6 +111,7 @@ C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\r
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\res\drawable\distance.png
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\R.cs.flag
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\uploadflags.txt
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\res\drawable\alertdialogstyle.xml
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\bin\Debug\SADSUI.dll.mdb
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\bin\Debug\Java.Interop.dll.mdb
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\bin\Debug\Microsoft.CSharp.dll.mdb
@@ -148,5 +149,16 @@ C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\a
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\System.Transactions.dll.mdb
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\bin\Debug\Plugin.Connectivity.Abstractions.dll
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\bin\Debug\Plugin.Connectivity.dll
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\bin\Debug\Plugin.Connectivity.pdb
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\bin\Debug\Plugin.Connectivity.xml
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\bin\Debug\Plugin.Connectivity.Abstractions.pdb
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\bin\Debug\Plugin.Connectivity.Abstractions.xml
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\SADSUI.csprojResolveAssemblyReference.cache
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\bin\Debug\Plugin.Connectivity.dll.mdb
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\bin\Debug\Plugin.Connectivity.Abstractions.dll.mdb
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\Plugin.Connectivity.Abstractions.dll.mdb
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\Plugin.Connectivity.dll.mdb
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\SADSUI.dll.mdb
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\bin\Debug\SADSUI.dll.mdb

@@ -2,6 +2,8 @@ C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\a
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\EasySplashScreen.dll
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\FormsViewGroup.dll
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\MySql.Data.CF.dll
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\Plugin.Connectivity.Abstractions.dll
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\Plugin.Connectivity.dll
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\SQLite-net.dll
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\SQLitePCL.raw.dll
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\Xamarin.Android.Support.v4.dll
@@ -20,15 +22,15 @@ C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\a
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\System.Xml.Linq.dll
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\System.Runtime.dll
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\System.ComponentModel.Composition.dll
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\System.Threading.Tasks.dll
+C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\System.Threading.dll
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\System.Collections.dll
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\System.Runtime.Extensions.dll
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\System.Reflection.dll
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\System.Linq.Expressions.dll
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\System.Diagnostics.Debug.dll
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\System.Linq.dll
-C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\System.Threading.dll
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\System.Reflection.Extensions.dll
-C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\System.Threading.Tasks.dll
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\System.Resources.ResourceManager.dll
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\System.ObjectModel.dll
 C:\Users\elsje\Desktop\Belgium Campus\2017\Project321\SPADSBO\SADSUI\obj\Debug\android\assets\System.IO.dll
