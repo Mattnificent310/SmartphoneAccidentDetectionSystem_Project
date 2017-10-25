@@ -21,6 +21,7 @@ namespace SADSUI
         {
             base.OnCreate(savedInstanceState);
 
+            ActionBar.Hide();
 
             //SplashScreen
             var config = new EasySplashScreen(this)
@@ -28,12 +29,9 @@ namespace SADSUI
                 .WithTargetActivity(Java.Lang.Class.FromType(typeof(MainActivity)))
                 .WithSplashTimeOut(4000)
                 .WithBackgroundResource(Resource.Drawable.intro_bg)
-                .WithFooterText("Copyright 2017")
                 .WithBeforeLogoText("WELCOME");
-                
-
-           
-            config.FooterTextView.SetTextColor(Color.White);
+                          
+            
             config.BeforeLogoTextView.TextSize = 50;
             config.BeforeLogoTextView.SetTextColor(Color.Orange);
 

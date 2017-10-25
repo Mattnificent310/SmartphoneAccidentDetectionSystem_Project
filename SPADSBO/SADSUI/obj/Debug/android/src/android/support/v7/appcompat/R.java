@@ -1633,7 +1633,7 @@ containing a value of this type.
         public static int intro_bg=0x7f02005b;
         public static int jl=0x7f02005c;
         public static int mail=0x7f02005d;
-        public static int notification_template_icon_bg=0x7f020068;
+        public static int notification_template_icon_bg=0x7f020067;
         public static int profile_teaser=0x7f02005e;
         public static int profileb=0x7f02005f;
         public static int report=0x7f020060;
@@ -1643,7 +1643,6 @@ containing a value of this type.
         public static int smads=0x7f020064;
         public static int user=0x7f020065;
         public static int userupdate=0x7f020066;
-        public static int website=0x7f020067;
     }
     public static final class id {
         public static int EmergencyListView=0x7f0b0058;

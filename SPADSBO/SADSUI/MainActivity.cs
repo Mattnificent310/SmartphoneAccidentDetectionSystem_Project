@@ -23,12 +23,13 @@ namespace SADSUI
         List<Keys> lstSource = new List<Keys>();
         List<Users> lstUsers = new List<Users>();
         DataHandler_MySQL dh;
-
+        public bool userfound = false;
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
+            ActionBar.Hide();
 
             if (CrossConnectivity.Current.IsConnected)
             {
@@ -51,7 +52,7 @@ namespace SADSUI
                 lstUsers = dh.getUsers();
 
                 mbtnSignIn = FindViewById<Button>(Resource.Id.btnSignIn);
-                var txtKey = FindViewById<EditText>(Resource.Id.txtUniqueKey);
+                EditText txtKey = FindViewById<EditText>(Resource.Id.txtUniqueKey);
                 btnSupport = FindViewById<Button>(Resource.Id.btnSupport);
 
                 btnSupport.Click += (s, e) =>
@@ -63,24 +64,31 @@ namespace SADSUI
 
                 mbtnSignIn.Click += (s, e) =>
                 {
+                   
 
-
-                    for (int i = 0; i < lstUsers.Count; i++)
+                    if (userfound == false)
                     {
-                        if (txtKey.Text == lstUsers[i].Key)
+                        foreach (Users item in lstUsers)
                         {
-                            var activity2 = new Intent(this, typeof(Home));
-                            StartActivity(activity2);
-                        }
-                        else
-                        {
-                            AlertDialog.Builder alertD = new AlertDialog.Builder(this);
-                            alertD.SetTitle("INVALID KEY");
-                            alertD.SetMessage("Your Key Is Invalid...Please try to varify your key from our website.");
-                            alertD.SetNeutralButton("OK", delegate { alertD.Dispose(); });
-                            alertD.Show();
+                            if (txtKey.Text == item.Key)
+                            {
+                                userfound = true;
+                                AlertDialog.Builder ad2 = new AlertDialog.Builder(this);
+                                ad2.SetTitle("Welcome");
+                                ad2.SetMessage("Welcome " + item.Name + " " + item.Surname + ". Please enjoy the SADS App");
+                                ad2.SetPositiveButton("Ok", (senderAlert, args) => {
+                                    var activity2 = new Intent(this, typeof(Home));
+                                    StartActivity(activity2);
+                                });
+                                ad2.Show();                   
+                            }
+                           
+                            
                         }
                     }
+
+                    checkuserfound(userfound);                            
+                                                                           
 
                 };
             }
@@ -98,6 +106,18 @@ namespace SADSUI
 
 
 
+        }
+
+        public void checkuserfound(bool found)
+        {
+            if (found == false)
+            {
+                AlertDialog.Builder alertD = new AlertDialog.Builder(this);
+                alertD.SetTitle("INVALID KEY");
+                alertD.SetMessage("Your Key Is Invalid...Please try to varify your key from our website.");
+                alertD.SetNeutralButton("OK", delegate { alertD.Dispose(); });
+                alertD.Show();
+            }
         }
 
         

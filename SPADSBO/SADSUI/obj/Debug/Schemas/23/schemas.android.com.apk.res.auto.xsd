@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>2017/10/24 13:21:11</xs:documentation>
+    <xs:documentation>2017/10/25 21:19:21</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -135,6 +135,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/alertdialogstyle" />
             <xs:enumeration value="@drawable/arrows" />
             <xs:enumeration value="@drawable/buttondrivestyle" />
             <xs:enumeration value="@drawable/buttonsendreport" />
@@ -532,6 +533,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/alertdialogstyle" />
             <xs:enumeration value="@drawable/arrows" />
             <xs:enumeration value="@drawable/buttondrivestyle" />
             <xs:enumeration value="@drawable/buttonsendreport" />
@@ -869,6 +871,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/alertdialogstyle" />
             <xs:enumeration value="@drawable/arrows" />
             <xs:enumeration value="@drawable/buttondrivestyle" />
             <xs:enumeration value="@drawable/buttonsendreport" />
@@ -1726,6 +1729,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/alertdialogstyle" />
             <xs:enumeration value="@drawable/arrows" />
             <xs:enumeration value="@drawable/buttondrivestyle" />
             <xs:enumeration value="@drawable/buttonsendreport" />
@@ -2178,6 +2182,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/alertdialogstyle" />
             <xs:enumeration value="@drawable/arrows" />
             <xs:enumeration value="@drawable/buttondrivestyle" />
             <xs:enumeration value="@drawable/buttonsendreport" />
@@ -2515,6 +2520,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/alertdialogstyle" />
             <xs:enumeration value="@drawable/arrows" />
             <xs:enumeration value="@drawable/buttondrivestyle" />
             <xs:enumeration value="@drawable/buttonsendreport" />
@@ -2960,6 +2966,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/alertdialogstyle" />
             <xs:enumeration value="@drawable/arrows" />
             <xs:enumeration value="@drawable/buttondrivestyle" />
             <xs:enumeration value="@drawable/buttonsendreport" />
@@ -3297,6 +3304,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/alertdialogstyle" />
             <xs:enumeration value="@drawable/arrows" />
             <xs:enumeration value="@drawable/buttondrivestyle" />
             <xs:enumeration value="@drawable/buttonsendreport" />
@@ -3917,6 +3925,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/alertdialogstyle" />
             <xs:enumeration value="@drawable/arrows" />
             <xs:enumeration value="@drawable/buttondrivestyle" />
             <xs:enumeration value="@drawable/buttonsendreport" />
@@ -4254,6 +4263,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/alertdialogstyle" />
             <xs:enumeration value="@drawable/arrows" />
             <xs:enumeration value="@drawable/buttondrivestyle" />
             <xs:enumeration value="@drawable/buttonsendreport" />
@@ -4591,6 +4601,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/alertdialogstyle" />
             <xs:enumeration value="@drawable/arrows" />
             <xs:enumeration value="@drawable/buttondrivestyle" />
             <xs:enumeration value="@drawable/buttonsendreport" />
@@ -4988,6 +4999,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/alertdialogstyle" />
             <xs:enumeration value="@drawable/arrows" />
             <xs:enumeration value="@drawable/buttondrivestyle" />
             <xs:enumeration value="@drawable/buttonsendreport" />
@@ -5325,6 +5337,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/alertdialogstyle" />
             <xs:enumeration value="@drawable/arrows" />
             <xs:enumeration value="@drawable/buttondrivestyle" />
             <xs:enumeration value="@drawable/buttonsendreport" />
@@ -5775,6 +5788,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/alertdialogstyle" />
             <xs:enumeration value="@drawable/arrows" />
             <xs:enumeration value="@drawable/buttondrivestyle" />
             <xs:enumeration value="@drawable/buttonsendreport" />
@@ -6172,6 +6186,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/alertdialogstyle" />
             <xs:enumeration value="@drawable/arrows" />
             <xs:enumeration value="@drawable/buttondrivestyle" />
             <xs:enumeration value="@drawable/buttonsendreport" />
@@ -6670,6 +6685,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/alertdialogstyle" />
             <xs:enumeration value="@drawable/arrows" />
             <xs:enumeration value="@drawable/buttondrivestyle" />
             <xs:enumeration value="@drawable/buttonsendreport" />
@@ -7237,6 +7253,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/alertdialogstyle" />
             <xs:enumeration value="@drawable/arrows" />
             <xs:enumeration value="@drawable/buttondrivestyle" />
             <xs:enumeration value="@drawable/buttonsendreport" />
@@ -8324,6 +8341,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/alertdialogstyle" />
             <xs:enumeration value="@drawable/arrows" />
             <xs:enumeration value="@drawable/buttondrivestyle" />
             <xs:enumeration value="@drawable/buttonsendreport" />
@@ -8822,6 +8840,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/alertdialogstyle" />
             <xs:enumeration value="@drawable/arrows" />
             <xs:enumeration value="@drawable/buttondrivestyle" />
             <xs:enumeration value="@drawable/buttonsendreport" />
@@ -9159,6 +9178,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/alertdialogstyle" />
             <xs:enumeration value="@drawable/arrows" />
             <xs:enumeration value="@drawable/buttondrivestyle" />
             <xs:enumeration value="@drawable/buttonsendreport" />

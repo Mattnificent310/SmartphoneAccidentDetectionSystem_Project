@@ -20,6 +20,7 @@ namespace SADSUI
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.DriveHistory);
+            ActionBar.Hide();
 
             var btnCancel = FindViewById<Button>(Resource.Id.btnHistoryBack);
 

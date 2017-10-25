@@ -37,6 +37,7 @@ namespace SADSUI
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.Website);
+            ActionBar.Hide();
 
             dh = new DataHandler_MySQL();
 
@@ -76,18 +77,26 @@ namespace SADSUI
                 {
                     con.Open();
                     dh.updateUser(txtUserContact.Text,txtUserModel.Text,txtUserReg.Text);
-                    AlertDialog.Builder alertD = new AlertDialog.Builder(this);
-                    alertD.SetTitle("Update");
-                    alertD.SetMessage("Update Successful");
-                    alertD.SetNeutralButton("OK", delegate { alertD.Dispose(); });
-                    alertD.Show();
-                    var activity2 = new Intent(this, typeof(Home));
-                    StartActivity(activity2);
+                    AlertDialog.Builder ad2 = new AlertDialog.Builder(this);
+                    ad2.SetTitle("Profile Changed");
+                    ad2.SetMessage("Update was successful...");
+                    ad2.SetPositiveButton("Awesome", (senderAlert, args) => {
+                        var activity2 = new Intent(this, typeof(Home));
+                        StartActivity(activity2);
+                    });
+                    ad2.Show();                  
                 }
             }
             catch (MySqlException ex)
             {
-                txtStatus.Text = ex.ToString();
+                AlertDialog.Builder ad3 = new AlertDialog.Builder(this);
+                ad3.SetTitle("Profile NOT Changed");
+                ad3.SetMessage("Update was unsuccessful... error: 'Failed to update profile' messasges was send to our app support");
+                ad3.SetPositiveButton("We will fix it...", (senderAlert, args) => {
+                    var activity2 = new Intent(this, typeof(Home));
+                    StartActivity(activity2);
+                });
+                ad3.Show();
             }
             finally
             {

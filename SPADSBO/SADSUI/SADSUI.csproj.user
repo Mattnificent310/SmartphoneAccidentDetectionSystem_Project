@@ -4,6 +4,6 @@
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
     <SelectedDevice>Samsung SM-A500FU</SelectedDevice>
     <DefaultDevice>EMU2</DefaultDevice>
-    <AndroidDesignerPreferredTheme>Theme.DeviceDefault</AndroidDesignerPreferredTheme>
+    <AndroidDesignerPreferredTheme>Theme.Black.NoTitleBar.Fullscreen</AndroidDesignerPreferredTheme>
   </PropertyGroup>
 </Project>

@@ -33,6 +33,7 @@ namespace SADSUI
 
             // Create your application here
             SetContentView(Resource.Layout.Home);
+            ActionBar.Hide();
 
             mScrollView = FindViewById<SlidingTabScrollView>(Resource.Id.sliding_tabs);
             mViewPager = FindViewById<ViewPager>(Resource.Id.viewPager);
@@ -162,21 +163,23 @@ namespace SADSUI
             private string latitud;
             private string longitud;
           public string AddressReport;
+            Button btnSendReport;
 
 
             public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
             {
                View view = inflater.Inflate(Resource.Layout.Fragment_Report, container, false);
 
+
                
                 txtLocation = view.FindViewById<TextView>(Resource.Id.location_text);
 
                 InitializeLocationManager();
 
-                var btnGetLocation = view.FindViewById<Button>(Resource.Id.get_address_button);
-                btnGetLocation.Click += GetLocation_OnClick;
-                var btnSendReport = view.FindViewById<Button>(Resource.Id.btnSendReport);
-                btnGetLocation.Click += SendEmail_OnClick;
+               // var btnGetLocation = view.FindViewById<Button>(Resource.Id.get_address_button);
+               
+                btnSendReport = view.FindViewById<Button>(Resource.Id.btnSendReport);
+                btnSendReport.Click += SendReport_Click;
 
                 var spinner1 = view.FindViewById<Spinner>(Resource.Id.spinnerServerity);
                 var spinner2 = view.FindViewById<Spinner>(Resource.Id.spinnerCarsInvolved);
@@ -191,6 +194,7 @@ namespace SADSUI
                 spinner1.Adapter = adaptor1;
                 spinner2.Adapter = adaptor2;
                 spinner3.Adapter = adaptor3;
+
                 return view;
             }
 
@@ -236,6 +240,16 @@ namespace SADSUI
                     Address address = addressList.FirstOrDefault();
                     AddressReport = address.GetAddressLine(0);
                     txtLocation.Text = AddressReport;
+                    if(txtLocation.Text != "Getting Location...Please wait")
+                    {
+                        btnSendReport.Enabled = true;
+                    }
+                    else
+                    {
+                        btnSendReport.Enabled = false;
+                    }
+
+                    
                    // txtLocation.Text = "Location : " + latitud + ", " + longitud;
                 }
             }
@@ -289,11 +303,7 @@ namespace SADSUI
                 StartActivity(emailIntent);
             }
 
-            private void GetLocation_OnClick(object sender, EventArgs e)
-            {
-                var btnReport = View.FindViewById<Button>(Resource.Id.btnSendReport);
-                btnReport.Enabled = true;
-            }
+           
 
             private void spinner_Itemselected(object sender, AdapterView.ItemSelectedEventArgs e)
             {

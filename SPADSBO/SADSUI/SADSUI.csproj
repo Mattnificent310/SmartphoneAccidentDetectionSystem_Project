@@ -225,9 +225,6 @@
     <AndroidResource Include="Resources\drawable\Arrows.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\website.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\Emergency.jpg" />
   </ItemGroup>
   <ItemGroup>
